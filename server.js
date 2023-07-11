@@ -26,7 +26,7 @@ app.get("/", (req, res) =>
   res.sendFile(path.join(__dirname, "/public/index.html"))
 );
 
-// GET /api route
+// GET /api routes
 app.get("/api/notes", (req, res) => {
   readFile("db/db.json").then((data) => {
     res.send(data);
@@ -58,9 +58,9 @@ app.delete("/api/notes/:id", (req, res) => {
   readFile("db/db.json").then((data) => {
     const parsedData = JSON.parse(data);
     const updatedData = parsedData.filter((note) => note.id !== noteId);
-// Return a success status code (204: No Content) if the deletion is successful
+    // Return a success status code (204: No Content) if the deletion is successful
     writeFile("db/db.json", JSON.stringify(updatedData)).then(() => {
-      res.sendStatus(204); 
+      res.sendStatus(204);
     });
   });
 });
