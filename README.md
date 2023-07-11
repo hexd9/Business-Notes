@@ -19,7 +19,7 @@ To use this application, you need to have Node.js, express, and UUID installed o
 
 ## Usage
 
-https://drive.google.com/file/d/1GCmmP7D2r0HyhLZVWW5sN1LZC8pFxNxy/view
+https://hexd9-business-notes-06298a216602.herokuapp.com/
 
 https://drive.google.com/file/d/1GCmmP7D2r0HyhLZVWW5sN1LZC8pFxNxy/view
 
